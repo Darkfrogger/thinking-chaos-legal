@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StoneKiller privacy policy: local practice data, permissions, classes, optional online media, backups and deletion. Draft for release review.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>StoneKiller Privacy Policy — Draft for review</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#fafbfc;--text:#18232c;--muted:#526171;--line:#d8e0e8;--link:#145ba4;--note:#fff5df;--accent:#945000}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{max-width:53rem;margin:0 auto;padding:3rem 1.3rem 5rem}a{color:var(--link);text-underline-offset:.18em}a:focus-visible{outline:3px solid var(--link);outline-offset:4px}
+    .brand{font-size:.8rem;letter-spacing:.16em;font-weight:750;color:var(--muted)}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.14;margin:.55rem 0 1rem}h2{font-size:1.35rem;line-height:1.35;margin:2.2rem 0 .7rem}p,ul{margin:.7rem 0}li+li{margin-top:.4rem}
+    .meta,footer{color:var(--muted);font-size:.92rem}.notice{border:1px solid var(--accent);border-left:5px solid var(--accent);background:var(--note);padding:1rem 1.2rem;margin:1.5rem 0}.notice h2{margin:0 0 .5rem;font-size:1.1rem}nav{border-block:1px solid var(--line);padding:.8rem 0;margin:1.6rem 0}nav a{display:inline-block;margin:.2rem 1rem .2rem 0}footer{border-top:1px solid var(--line);margin-top:2.5rem;padding-top:1rem}code{font-size:.92em;overflow-wrap:anywhere}
+    @media(prefers-color-scheme:dark){:root{--bg:#151b21;--text:#e7edf2;--muted:#afbdcb;--line:#3b4956;--link:#8fc7ff;--note:#30281b;--accent:#e6b669}}
+    @media print{body{background:#fff;color:#000}main{padding:0;max-width:none}nav{display:none}.notice{background:#fff;color:#000}a{color:inherit}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">STONEKILLER</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Draft updated: <time datetime="2026-10-19">19 October 2026</time> · Release confirmation pending</p>
+  </header>
+
+  <aside class="notice" aria-labelledby="review-title">
+    <h2 id="review-title">Draft — not yet a final release policy</h2>
+    <p>This draft describes the documented features and reviewed source of StoneKiller 0.30.0. It has not been matched to the Android build distributed through Google Play. It must not yet be used as the final Play Store privacy policy.</p>
+    <p><strong>Before final publication:</strong> confirm the exact release build and its dependencies and permissions, the intended age groups, and the arrangements for school servers, student data, consent, retention and deletion. The reviewed class-mode implementation still marks its privacy and consent arrangements as unfinished.</p>
+  </aside>
+
+  <p>StoneKiller is a drum practice and teaching application developed and published by <strong>Patrick Reeb, an individual developer</strong>. This policy describes local data, device permissions, optional class connections, online media and files you choose to share. Features vary by edition, platform and version.</p>
+
+  <nav aria-label="Policy sections">
+    <a href="#local">Local data</a><a href="#permissions">Permissions</a><a href="#classes">Classes</a><a href="#media">Online media</a><a href="#retention">Deletion</a><a href="#contact">Contact</a>
+  </nav>
+
+  <section aria-labelledby="local">
+    <h2 id="local">1. Data stored on your device</h2>
+    <p>The reviewed app uses local app or browser storage for lessons, grooves, lists, practice plans, progress and self-assessments, settings, song studies, class journals, saved recordings and imported content. A StoneKiller online account is not required for the documented local practice features.</p>
+    <p>Teaching features can also store a student register, including names and aliases, student and parent contact details, billing or address information entered in notes, goals, lesson notes, history, attendance, schedules and attachments. These records may contain information about other people. Teachers should enter only what is needed and manage their use and retention appropriately.</p>
+    <p>Local storage does not mean that every feature is offline. Class connections, online media and sharing can send data off the device, as described below.</p>
+  </section>
+
+  <section aria-labelledby="permissions">
+    <h2 id="permissions">2. Microphone, camera, files and nearby devices</h2>
+    <ul>
+      <li><strong>Microphone:</strong> recording and rhythm analysis features can access audio you choose to capture. Recordings or derived practice data can be kept locally when saved. Audio/video class features may also use the microphone.</li>
+      <li><strong>Camera:</strong> QR scanning, camera and video practice tools, short demonstrations and supported class video features can access images or video. Some features display a live view; others let you save or send a recording.</li>
+      <li><strong>Files:</strong> import, export, backup and restore features read or write files you select, such as exercises, song media, recordings and student records.</li>
+      <li><strong>Other inputs:</strong> supported tools can read MIDI notes from a connected instrument or request screen/tab audio for tempo analysis when you choose that input.</li>
+      <li><strong>Local network and nearby-device permissions:</strong> class discovery, connections and supported Android lesson Wi-Fi features use the device's networking facilities. Older Android versions may request a location permission for Wi-Fi functions; the exact permissions in the release build still need verification.</li>
+    </ul>
+    <p>You can manage camera and microphone access in your device or browser settings. Refusing a permission can prevent the related feature from working.</p>
+  </section>
+
+  <section aria-labelledby="classes">
+    <h2 id="classes">3. Classes and connections to other devices</h2>
+    <p>Joining or hosting a class exchanges information with the teacher, participating devices and, where configured, a school relay. This can include a display name, participant or device identifiers, public identity keys used for teacher linking, exercises, tempo and playback state, messages, homework, participation and exercise feedback. The app uses a randomly generated installation identifier, which can also be included in backups. Optional camera and demonstration features can transmit images, video or audio between devices. Connected camera tools can also send a device name, preview image and recording status, including battery or available storage information where supported.</p>
+    <p>The documented default is a local-network connection. A school server uses the address configured by the user or school; its operator and deployment determine where that traffic goes. A class connection is therefore a transfer between devices even when no public internet service is involved.</p>
+    <p>Class journals, homework and received demonstrations may remain on the teacher's and students' devices after the connection ends. The reviewed relay forwards class messages while the class is open; this does not establish a retention policy for logs or infrastructure operated by a school.</p>
+    <p>The app's general class traffic must not be assumed to be end-to-end encrypted. Shared relay traffic can reach other participants in the same class room, including messages or demonstrations marked for a particular recipient; selecting a recipient is not a guarantee of confidential delivery. Use a trusted network. A teacher or school must confirm who is responsible for student data, what participants can see, any required consent and the server operator's security and retention arrangements before deploying these features.</p>
+  </section>
+
+  <section aria-labelledby="media">
+    <h2 id="media">4. Optional online media and external services</h2>
+    <p>Song studies support links to YouTube, Vimeo and SoundCloud. Pasting a supported link can request its title or other metadata from that provider before playback. The request includes the media address; the provider also receives the connection information needed to answer it, such as an IP address. Using a direct online media URL also contacts the server hosting that file, including for supported media analysis.</p>
+    <p>Loading an online player or enabling the setting to load a provider automatically connects to that provider's player and related resources. The provider can then process technical information and use cookies or similar technologies according to its own practices, your browser and your account settings. Playback consent does not prevent the earlier metadata request.</p>
+    <p>Review the relevant provider's policy: <a href="https://policies.google.com/privacy" rel="noreferrer">Google / YouTube</a>, <a href="https://vimeo.com/privacy" rel="noreferrer">Vimeo</a>, and <a href="https://soundcloud.com/pages/privacy" rel="noreferrer">SoundCloud</a>. Use local media and avoid online links if you do not want to trigger these provider connections.</p>
+    <p>This draft makes no blanket claim that the released app contains no third-party SDKs, sends no diagnostics, or never transfers data. The dependencies and runtime behavior of the exact release build must be checked before those statements could be made.</p>
+  </section>
+
+  <section aria-labelledby="sharing">
+    <h2 id="sharing">5. Backups, exports and sharing</h2>
+    <p>You can export content and create a full backup to move data to another device. Depending on the export, files can contain practice history, recordings, class journals or student information. Store them somewhere appropriate for their contents.</p>
+    <p>When you choose a messaging app, email app, cloud folder or another sharing destination, the selected service and recipients receive the content you send. Their processing and retention are governed by their own arrangements. Deleting an item in StoneKiller does not remove copies already exported or received by someone else.</p>
+    <p>Device and operating-system backup behavior can differ by platform. The released Android backup configuration and restore behavior still need confirmation; no guarantee is made here that operating-system backups are disabled or that exported backups are encrypted.</p>
+  </section>
+
+  <section aria-labelledby="retention">
+    <h2 id="retention">6. Retention, deletion and your choices</h2>
+    <p>Saved local data generally stays until it is removed through the relevant app controls, the app or browser's storage is cleared, or the platform removes it. Transcription history automatically keeps only the latest 40 takes. Uninstalling may remove app data, but does not establish that separate exports, backups or copies on other devices have been deleted.</p>
+    <ul>
+      <li>Use the available delete controls for saved content, recordings, student records and class journals. Archiving a student retains their records; use Delete to remove them. Deleting a journal class also removes its stored demonstration videos from that journal.</li>
+      <li>In <strong>Settings → My classes</strong>, turn off keeping class content in the journal on a shared device, and remove teacher links you no longer need. Turning off future journal saving is not a promise to erase earlier entries.</li>
+      <li>Remove backup and export files separately from their storage locations. Ask recipients or a school operator about copies they hold.</li>
+      <li>To clear app-managed storage, use your device or browser's app-data controls. Save anything you want to keep first. Separately saved recordings, project folders and original media can remain outside that storage and must be managed individually. Backup restoration may bring back previously saved data.</li>
+    </ul>
+    <p>Any separate retention period and process for privacy requests, school-hosted data or support communications must be established by the responsible publisher or operator before this draft becomes final.</p>
+  </section>
+
+  <section aria-labelledby="security">
+    <h2 id="security">7. Security and children</h2>
+    <p>Protect devices and backups with appropriate access controls, review what is shared and use networks you trust. This policy does not promise that all local data, backups or class traffic is encrypted.</p>
+    <p>StoneKiller includes teacher and student features. Its target age groups, any use by children, and the relevant parent, teacher or school notices and consent arrangements still require confirmation. No minimum age or parental-consent implementation is asserted by this draft.</p>
+  </section>
+
+  <section aria-labelledby="website">
+    <h2 id="website">8. Visiting this policy website</h2>
+    <p>This page is hosted on GitHub Pages. Its published HTML includes no analytics script, external font, embedded player or form. GitHub states that it logs and stores visitors' IP addresses for security when a GitHub Pages site is visited. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub Privacy Statement</a> for GitHub's processing and retention practices.</p>
+    <p>Following an external link connects you to that website. Visiting this policy page is separate from using StoneKiller's local practice features.</p>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">9. Publisher, privacy contact and changes</h2>
+    <p><strong>Publisher:</strong> Patrick Reeb, an individual developer.</p>
+    <p><strong>Privacy contact:</strong> <a href="mailto:business@reebs.org">business@reebs.org</a>. Contact Patrick Reeb at this address for questions about this policy or the handling of personal data. Include the app version and a description of your request; avoid sending recordings or student records unless needed and an appropriate way to send them has been agreed.</p>
+    <p>Responsibilities for data managed by a teacher or school must also be confirmed for the relevant deployment.</p>
+    <p>Do not post student records, recordings, credentials or other private information in this public repository or its issue tracker.</p>
+    <p>When the release behavior or this policy changes, the policy should be updated with the date and scope of the change. The date above is the draft's revision date, not an effective date for a final policy.</p>
+  </section>
+
+  <footer><a href="../index.html">Thinking Chaos legal information</a> · StoneKiller · Draft for release review</footer>
+</main>
+</body>
+</html>
